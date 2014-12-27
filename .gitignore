@@ -1,3 +1,6 @@
+# PHPStorm
+.idea
+
 # Composer files
 composer.phar
 vendor/
@@ -15,6 +18,3 @@ data/sessions/
 data/tmp/
 temp/
 
-# Legacy ZF1
-demos/
-extras/documentation
