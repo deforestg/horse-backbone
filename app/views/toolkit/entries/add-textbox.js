@@ -9,19 +9,19 @@ var AddTextboxView = Backbone.View.extend({
         remove: 'remove'
     },
 
-    initialize: function () {
+    initialize: function() {
         this.listenTo(this.model, 'change', this.render);
         this.listenTo(this.model, 'destroy', this.remove);
     },
 
-    render: function () {
+    render: function() {
         this.$el.html(this.template(this.model.toJSON()));
         return this;
     },
 
-    update: function () {
+    update: function() {
     },
 
-    remove: function () {
+    remove: function() {
     }
 });

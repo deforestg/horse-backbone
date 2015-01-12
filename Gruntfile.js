@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint'); // load lint
 
     grunt.initConfig({
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
         concat: {
             app: {
                 options: {
-                    process: function (src, filepath) {
+                    process: function(src, filepath) {
                         return '//####' + filepath + '\n' + src;
                     }
                 },

@@ -5,10 +5,10 @@ var AppView = Backbone.View.extend({
     events: {
     },
 
-    initialize: function () {
+    initialize: function() {
 
     },
 
-    render: function () {
+    render: function() {
     }
 });
