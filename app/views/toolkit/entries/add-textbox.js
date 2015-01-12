@@ -23,6 +23,6 @@ var AddTextboxView = Backbone.View.extend({
     },
 
     addTextbox: function() {
-
+        app.Items.add(new Textbox());
     }
 });

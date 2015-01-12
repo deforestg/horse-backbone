@@ -8,8 +8,9 @@ var AppView = Backbone.View.extend({
     widgets: [],
 
     initialize: function() {
-        this.ToolkitView = new ToolkitView({model: new Toolkit()});
-        this.widgets.push(this.ToolkitView);
+        app.Toolkit = new Toolkit();
+        this.widgets.push(new ToolkitView({model: app.Toolkit}));
+        this.widgets.push(new PlaygroundView());
         this.render();
     },
 

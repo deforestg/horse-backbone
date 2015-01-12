@@ -1,16 +1,18 @@
 var PlaygroundView = Backbone.View.extend({
+
     events: {
     },
 
     items: [],
 
     initialize: function() {
+        this.listenTo(app.Items, 'add', this.addItem);
     },
 
     render: function() {
-        for (var i = 0; i < this.widgets.length; i++) {
+        for (var i = 0; i < this.items.length; i++) {
             this.items[i].render();
-            this.$el.append(this.widgets[i].$el);
+            this.$el.append(this.items[i].$el);
         }
     },
 
