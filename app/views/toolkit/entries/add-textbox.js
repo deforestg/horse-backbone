@@ -1,10 +1,9 @@
 var AddTextboxView = Backbone.View.extend({
 
-    tagName: 'li',
-
     template: _.template($('#add-textbox-template').html()),
 
     events: {
+        click: 'addTextbox',
         update: 'update',
         remove: 'remove'
     },
@@ -19,9 +18,11 @@ var AddTextboxView = Backbone.View.extend({
         return this;
     },
 
-    update: function() {
+    remove: function() {
+        this.$el.remove();
     },
 
-    remove: function() {
+    addTextbox: function() {
+
     }
 });

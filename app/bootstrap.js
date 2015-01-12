@@ -1,6 +1,6 @@
 var app = app || {};
 
-$(function () {
+$(function() {
     app.Router = new Router();
     app.AppView = new AppView();
     app.Items = new Items();

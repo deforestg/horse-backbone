@@ -39,7 +39,14 @@ module.exports = function(grunt) {
                         return '//####' + filepath + '\n' + src;
                     }
                 },
-                src: ['app/lib/underscore.js', 'app/lib/backbone.js', 'app/*.js', 'app/**/*.js'],
+                src: [ // order matters for some things
+                    'app/lib/underscore.js',
+                    'app/lib/backbone.js',
+                    'app/models/items/item.js',
+                    'app/models/toolkit/entries/entry.js',
+                    'app/*.js',
+                    'app/**/*.js'
+                ],
                 dest: 'public/js/app.js'
             },
             templates: {
