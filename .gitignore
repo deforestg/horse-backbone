@@ -1,15 +1,19 @@
+# js
+node_modules
+public/js/app.js
+
+# html
+public/templates.html
+
 # PHPStorm
 .idea
 
 # Composer files
-composer.phar
+composer.lock
 vendor/
 
 # Local configs
 config/autoload/*.local.php
-
-# Binary gettext files
-*.mo
 
 # Data
 data/logs/
