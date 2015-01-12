@@ -1,8 +1,4 @@
-<div class="template" id="textbox-template">
-    <textarea id="textbox">
-
-    </textarea>
-    <label for="textbox">
-        New Textbox
-    </label>
-</div>
+<script type="text/template" id="textbox-template">
+    <textarea class="textbox" id="<%- id %>"><%- text %></textarea>
+    <label for="<%- id %>"><%- title %></label>
+</script>
