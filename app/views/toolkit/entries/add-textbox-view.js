@@ -18,11 +18,8 @@ var AddTextboxView = Backbone.View.extend({
         return this;
     },
 
-    remove: function() {
-        this.$el.remove();
-    },
-
     addTextbox: function() {
         app.Items.add(new Textbox());
     }
+
 });

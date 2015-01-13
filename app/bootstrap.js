@@ -1,8 +1,8 @@
 var app = app || {};
 
 $(function() {
+    app.Items = new Items();
     app.Router = new Router();
     app.AppView = new AppView();
-    app.Items = new Items();
     Backbone.history.start();
 });

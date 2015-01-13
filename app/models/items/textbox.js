@@ -1,15 +1,15 @@
 var Textbox = Item.extend({
-    // Default attributes for the todo
-    // and ensure that each todo created has `title` and `completed` keys.
-    defaults: {
-        title: '',
-        completed: false
+
+    defaults: function() {
+        return {
+            label: 'New Textbox',
+            text: '',
+            id: this.cid
+        };
     },
 
-    // Toggle the `completed` state of this todo item.
-    toggle: function () {
-        this.save({
-            completed: !this.get('completed')
-        });
+    addView: function() {
+        return new TextboxView({model: this});
     }
+
 });
