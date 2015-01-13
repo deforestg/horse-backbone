@@ -44,6 +44,8 @@ module.exports = function(grunt) {
                     'app/lib/backbone.js',
                     'app/models/items/item.js',
                     'app/models/toolkit/entries/entry.js',
+                    'app/views/items/item-view.js',
+                    'app/views/toolkit/entries/entry-view.js',
                     'app/*.js',
                     'app/**/*.js'
                 ],

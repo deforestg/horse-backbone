@@ -12,8 +12,7 @@ var PlaygroundView = Backbone.View.extend({
     },
 
     addItem: function(item) {
-        var view = item.addView();
-        this.$el.find('.playground').append(view.render().$el);
+        this.$el.find('.playground').append(item.addView().render().$el);
     }
 
 });

@@ -1,4 +1,4 @@
-var AddTextboxView = Backbone.View.extend({
+var AddTextboxView = EntryView.extend({
 
     template: _.template($('#add-textbox-template').html()),
 
